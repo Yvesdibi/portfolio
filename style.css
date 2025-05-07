@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  input[type="text"], input[type="color"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus, input[type="color"]:focus, input[type="number"]:focus {
+    border-color: #4facfe;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00c6ff;
+  }
+  
+  #qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #success-message {
+    color: green;
+    margin-top: 15px;
+    font-size: 14px;
+    display: none;
+  }
+  
+  #error-message {
+    color: red;
+    margin-top: 15px;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .dark-mode {
+    background: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .container {
+    background: #444;
+    color: #fff;
+  }
+  
+  .dark-mode button {
+    background: #222;
+  }
+  
+  .dark-mode input[type="text"], .dark-mode input[type="color"], .dark-mode input[type="number"] {
+    background: #555;
+    color: #fff;
+    border-color: #777;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
